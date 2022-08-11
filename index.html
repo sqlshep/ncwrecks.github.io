@@ -28,7 +28,7 @@
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
     center: [34.22803333, -76.56511667], // EDIT coordinates to re-center map
-    zoom: 8,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    zoom: 9,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false,
     tap: false
   });
@@ -57,8 +57,23 @@
   L.marker([34.38140, -76.36500]).addTo(map) // EDIT marker coordinates
   .bindPopup("<b>Ashkhabad</b><a href='https://monitor.noaa.gov/shipwrecks/ashkhabad.html'> Ship Stats</a>");
   
+  L.marker([34.52834, -76.24206]).addTo(map) // EDIT marker coordinates
+  .bindPopup("<b>Atlas</b><a href='https://monitor.noaa.gov/shipwrecks/atlas.html'> Ship Stats</a>");
+
+  L.marker([35.39063, -75.33623]).addTo(map) // EDIT marker coordinates
+  .bindPopup("<b>City of Atlanta</b><a href='https://monitor.noaa.gov/shipwrecks/cityofatlanta.html'> Ship Stats</a>");
+
+  L.marker([34.90016, -75.75048]).addTo(map) // EDIT marker coordinates
+  .bindPopup("<b>Dixie Arrow</b><a href='https://monitor.noaa.gov/shipwrecks/dixie_arrow.html'> Ship Stats</a>");
   
+  L.marker([35.62599, -74.89110]).addTo(map) // EDIT marker coordinates
+  .bindPopup("<b>Papoose</b><a href='https://monitor.noaa.gov/shipwrecks/papoose.html'> Ship Stats</a>");
   
+  L.marker([34.143692, -76.652352]).addTo(map) // EDIT marker coordinates
+  .bindPopup("<b>W.E. Hutton</b><a href='https://monitor.noaa.gov/shipwrecks/hutton.html'> Ship Stats</a>");
+  
+  L.marker([34.278083, -76.644317]).addTo(map) // EDIT marker coordinates
+  .bindPopup("<b>Aeolus</b><a href='http://www.nc-wreckdiving.com/WRECKS/AEOLUS/AEOLUS.HTML'> Ship Stats</a>");
   </script>
 </body>
 </html>
