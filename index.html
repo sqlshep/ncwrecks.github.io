@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>leaflet-map-simple</title>
+  <title>North Carolina Wreck Sites</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -37,21 +37,26 @@
   
   var Esri_OceanBasemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
-	maxZoom: 13
+	maxZoom: 14
 }).addTo(map);
 
 
-  /* Display a point marker with pop-up text */
+  
   L.marker([34.22803333, -76.56511667]).addTo(map) // EDIT marker coordinates
   .bindPopup("<b>U-352</b><a href='https://monitor.noaa.gov/shipwrecks/u-352.html'> Ship Stats</a>");
   
-  /* Display a point marker with pop-up text */
   L.marker([34.186967, -76.602117]).addTo(map) // EDIT marker coordinates
   .bindPopup("<b>USS Schurz</b><a href='https://monitor.noaa.gov/shipwrecks/schurz.html'> Ship Stats</a>");
   
-  /* Display a point marker with pop-up text */
   L.marker([34.606892, -76.314128]).addTo(map) // EDIT marker coordinates
   .bindPopup("<b>Caribsea</b><a href='https://monitor.noaa.gov/shipwrecks/caribsea.html'> Ship Stats</a>");
+  
+  L.marker([34.499833, -76.897983]).addTo(map) // EDIT marker coordinates
+  .bindPopup("<b>Ario</b><a href='https://monitor.noaa.gov/shipwrecks/ario.html'> Ship Stats</a>");
+
+  L.marker([34.38140, -76.36500]).addTo(map) // EDIT marker coordinates
+  .bindPopup("<b>Ashkhabad</b><a href='https://monitor.noaa.gov/shipwrecks/ashkhabad.html'> Ship Stats</a>");
+  
   
   
   </script>
