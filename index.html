@@ -27,25 +27,25 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [34.22803333, -76.56511667], // EDIT coordinates to re-center map
+    center: [34.81876, -75.90303], // EDIT coordinates to re-center map
     zoom: 9,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false,
     tap: false
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
-  
+/*  
   var Esri_OceanBasemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
 	maxZoom: 14
 }).addTo(map); 
-
+*/
 /*
 var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 }).addTo(map);
 */
-/*
+
 var GeoportailFrance_orthos = L.tileLayer('https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}', {
 	attribution: '<a target="_blank" href="https://www.geoportail.gouv.fr/">Geoportail France</a>',
 	bounds: [[-75, -180], [81, 180]],
@@ -55,7 +55,7 @@ var GeoportailFrance_orthos = L.tileLayer('https://wxs.ign.fr/{apikey}/geoportai
 	format: 'image/jpeg',
 	style: 'normal'
 }).addTo(map);
-*/
+
 
 
   
@@ -105,7 +105,7 @@ var GeoportailFrance_orthos = L.tileLayer('https://wxs.ign.fr/{apikey}/geoportai
   .bindPopup("<b>Carl Gerhard</b><a href='https://monitor.noaa.gov/shipwrecks/carl_gerhard.html'> Ship Stats</a>");
   
   L.marker([35.00000, -74.33333]).bindTooltip("Allan Jackson",{permanent: true, direction: 'right'}).addTo(map)
-  .bindPopup("<b>Allan Jackson</b><a href='https://monitor.noaa.gov/shipwrecks/allan_jackson.html'> Ship Stats</a>");
+  .bindPopup("<b>Allan Jackson(Unknown Location)</b><a href='https://monitor.noaa.gov/shipwrecks/allan_jackson.html'> Ship Stats</a>");
   
   L.marker([35.12357, -75.35343]).bindTooltip("Australia",{permanent: true, direction: 'right'}).addTo(map)
   .bindPopup("<b>Australia</b><a href='https://monitor.noaa.gov/shipwrecks/australia.html'> Ship Stats</a>");
@@ -128,10 +128,54 @@ var GeoportailFrance_orthos = L.tileLayer('https://wxs.ign.fr/{apikey}/geoportai
   L.marker([35.03034, -75.47717]).bindTooltip("Empire Gem",{permanent: true, direction: 'right'}).addTo(map)
   .bindPopup("<b>Empire Gem</b><a href='https://monitor.noaa.gov/shipwrecks/empire_gem.html'> Ship Stats</a>");
   
+  L.marker([35.20599, -75.25217]).bindTooltip("Empire Thrush",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Empire Thrush</b><a href='https://monitor.noaa.gov/shipwrecks/empire-thrush.html'> Ship Stats</a>");
         
-  
+  L.marker([33.87910, -77.22679]).bindTooltip("Esso Nashville",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Esso Nashville</b><a href='https://monitor.noaa.gov/shipwrecks/esso_nashville.html'> Ship Stats</a>");
         
-
+  L.marker([36.60000, -74.75000]).bindTooltip("Equipoise",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Equipoise(Unknown Location)</b><a href='https://monitor.noaa.gov/shipwrecks/equipoise.html'> Ship Stats</a>");
+        
+  L.marker([34.99012, -75.80100]).bindTooltip("F.W. Abrams",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>F.W. Abrams</b><a href='https://monitor.noaa.gov/shipwrecks/abrams.html'> Ship Stats</a>");
+        
+  L.marker([35.17095, -75.35816]).bindTooltip("Kassandra Louloudis",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Kassandra Louloudis</b><a href='https://monitor.noaa.gov/shipwrecks/kassandra.html'> Ship Stats</a>");
+        
+  L.marker([35.03408, -75.44467]).bindTooltip("Lancing",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Lancing</b><a href='https://monitor.noaa.gov/shipwrecks/lancing.html'> Ship Stats</a>");
+        
+  L.marker([35.07988, -75.39113]).bindTooltip("Liberator",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Liberator</b><a href='https://monitor.noaa.gov/shipwrecks/liberator.html'> Ship Stats</a>");
+            
+  L.marker([34.60427, -75.78703]).bindTooltip("Malchace",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Malchace</b><a href='https://monitor.noaa.gov/shipwrecks/malchace.html'> Ship Stats</a>");
+            
+  L.marker([34.67653, -75.78553]).bindTooltip("Manuela",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Manuela</b><a href='https://monitor.noaa.gov/shipwrecks/manuela.html'> Ship Stats</a>");
+                      
+  L.marker([35.54410, -75.24941]).bindTooltip("Marore",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Marore</b><a href='https://monitor.noaa.gov/shipwrecks/marore.html'> Ship Stats</a>");
+                      
+  L.marker([34.05769, -76.57081]).bindTooltip("Naeco",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Naeco</b><a href='https://monitor.noaa.gov/shipwrecks/naeco.html'> Ship Stats</a>");
+        
+  L.marker([36.06721, -75.22749]).bindTooltip("Norvana",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Norvana</b><a href='https://monitor.noaa.gov/shipwrecks/norvana.html'> Ship Stats</a>");
+        
+  L.marker([34.14424, -76.13006]).bindTooltip("Panam",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Panam</b><a href='https://monitor.noaa.gov/shipwrecks/panam.html'> Ship Stats</a>");
+     
+  L.marker([35.39779, -75.11609]).bindTooltip("San Delfino",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>San Delfino</b><a href='https://monitor.noaa.gov/shipwrecks/delfino.html'> Ship Stats</a>");
+ 
+   L.marker([34.54479, -76.89499]).bindTooltip("Suloide",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Suloide</b><a href='https://monitor.noaa.gov/shipwrecks/suloide.html'> Ship Stats</a>");
+   
+   L.marker([34.53880, -76.01559]).bindTooltip("Tamaulipas",{permanent: true, direction: 'right'}).addTo(map)
+  .bindPopup("<b>Tamaulipas</b><a href='https://monitor.noaa.gov/shipwrecks/tamaulipas.html'> Ship Stats</a>");
+   
   </script>
 </body>
 </html>
