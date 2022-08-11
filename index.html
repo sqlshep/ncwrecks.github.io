@@ -34,18 +34,18 @@
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
-/*  
+  
   var Esri_OceanBasemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
 	maxZoom: 14
 }).addTo(map); 
-*/
+
 /*
 var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 }).addTo(map);
 */
-
+/*
 var GeoportailFrance_orthos = L.tileLayer('https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}', {
 	attribution: '<a target="_blank" href="https://www.geoportail.gouv.fr/">Geoportail France</a>',
 	bounds: [[-75, -180], [81, 180]],
@@ -56,7 +56,7 @@ var GeoportailFrance_orthos = L.tileLayer('https://wxs.ign.fr/{apikey}/geoportai
 	style: 'normal'
 }).addTo(map);
 
-
+*/
 
   
   L.marker([34.22803333, -76.56511667]).bindTooltip("U-352",{permanent: true, direction: 'right'}).addTo(map)
